@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            // array of object
             tasks: [
                 {
                     text: 'Fare i compiti',

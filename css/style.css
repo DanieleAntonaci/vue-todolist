@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+#container{
+    background-color: #489cc1;
+    height: 100vh;
+    width: 100%;
+    font-size: 1.3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app{
+    text-align: center;
+    background-color: white;
+    min-height: 400px;
+    width: 50%;
+}
+/* header */
+header h1{
+    padding-top: 20px;
+    
+}
+
+/* section input element */
+#input-element{
+    margin: 20px 0;
+}
+#input-element input{
+    width: 60%;
+    height: 50px;
+}
+
+
+/* section list element */
+#list-element{
+    margin: 20px 0;
+}
