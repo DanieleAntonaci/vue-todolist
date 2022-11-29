@@ -29,13 +29,30 @@ header h1{
 #input-element{
     margin: 20px 0;
 }
+#input-element i{
+    padding: 8px;
+    font-size: 30px;
+    vertical-align: sub;
+    background-color: #489cc1;
+    border: none;
+    color: white;
+}
+#input-element i:hover {
+    background: #0b7dda;
+}
+
 #input-element input{
     width: 60%;
     height: 50px;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    border:2px solid #489cc1;
+    box-shadow: none;
 }
 
 
 /* section list element */
 #list-element{
     margin: 20px 0;
+    overflow-y: auto;
 }
