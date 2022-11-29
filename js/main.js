@@ -25,7 +25,12 @@ createApp({
     },
     methods: {
         createNewTask() {
-            this.tasks.unshift({ text: this.newTask, done: false });
+            if (this.newTask.length < 5 || this.newTask === '') {
+                this.error = true;
+            } else {
+                this.tasks.unshift({ text: this.newTask, done: false });
+                this.error = false;
+            }
             this.newTask = '';
         },
         delateTask(index) {
