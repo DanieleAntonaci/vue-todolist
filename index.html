@@ -22,6 +22,7 @@
                     <input type="text" name="ToDoElement" id="to-do-element" placeholder="New task" v-model="newTask" @keyup.enter="createNewTask">
                     <button @click="createNewTask"><i class="fa-solid fa-plus"></i></button>
 
+                    <!-- error message -->
                     <div class="error" v-if="error">
                         <span>Devi nserire un task di alemono 5 lettere</span>
                     </div>
