@@ -39,6 +39,7 @@ header h1{
     background-color: #489cc1;
     border: none;
     color: white;
+    cursor: pointer;
 }
 #input-element i:hover {
     background: #0b7dda;
@@ -72,6 +73,7 @@ header h1{
     border-bottom: 2px solid rgba(219, 219, 219, 0.451);
 }
 #list-element li i{
-    color: red;    
+    color: red;   
+    cursor: pointer; 
 
 }

@@ -28,8 +28,8 @@ createApp({
             this.tasks.unshift({ text: this.newTask, done: false });
             this.newTask = '';
         },
-        delateTask() {
-            this.tasks
+        delateTask(index) {
+            this.tasks.splice(index, 1)
         }
     }
 }).mount('#app');
