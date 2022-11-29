@@ -19,17 +19,15 @@
             <main>
                 <!-- input of the elements in the list  -->
                 <div id="input-element">
-                    <input type="text" name="ToDoElement" id="to-do-element">
-
-                    <!-- btn for add element -->
-                    <button><i class="fa-solid fa-plus"></i></button>
+                    <input type="text" name="ToDoElement" id="to-do-element" placeholder="New task" v-model="newTask">
+                    <button @click="createNewTask"><i class="fa-solid fa-plus"></i></button>
                 </div>
 
                 <!-- list of element -->
                 <ul id="list-element">
-                    <li>
-                        Fare la spesa
-                        <i class="fa-solid fa-xmark"></i>
+                    <li v-for="(task, index) in tasks">
+                        {{task.text}}
+                        <i class="fa-solid fa-xmark" @click="daleteTask"></i>
                     </li>
                 </ul>
             </main>

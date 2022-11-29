@@ -18,8 +18,18 @@ createApp({
                     done: false
                 }
             ],
+            newTask: '',
+            error: false,
 
-
+        }
+    },
+    methods: {
+        createNewTask() {
+            this.tasks.unshift({ text: this.newTask, done: false });
+            this.newTask = '';
+        },
+        delateTask() {
+            this.tasks
         }
     }
 }).mount('#app');

@@ -18,7 +18,10 @@
     background-color: white;
     min-height: 400px;
     width: 50%;
+    border-radius: 20px;
 }
+
+
 /* header */
 header h1{
     padding-top: 20px;
@@ -44,6 +47,7 @@ header h1{
 #input-element input{
     width: 60%;
     height: 50px;
+    padding: 0 10px;
     font-size: 1.3rem;
     margin-right: 10px;
     border:2px solid #489cc1;
@@ -55,4 +59,19 @@ header h1{
 #list-element{
     margin: 20px 0;
     overflow-y: auto;
+}
+#list-element li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    margin: 10px auto;
+    line-height: 30px;
+    padding: 0 3%;
+    border-bottom: 2px solid rgba(219, 219, 219, 0.451);
+}
+#list-element li i{
+    color: red;    
+
 }
