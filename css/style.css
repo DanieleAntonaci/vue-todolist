@@ -82,5 +82,14 @@ header h1{
 #list-element li i{
     color: red;   
     cursor: pointer; 
+    padding-left: 6px;
 
 }
+.completed span{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+#list-element .completed .fa-check{
+    color: greenyellow;
+}
+

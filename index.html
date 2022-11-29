@@ -30,9 +30,12 @@
 
                 <!-- list of element -->
                 <ul id="list-element">
-                    <li v-for="(task, index) in tasks">
-                        {{task.text}}
-                        <i class="fa-solid fa-xmark" @click="delateTask(index)"></i>
+                    <li v-for="(task, index) in tasks" :class="task.done ? 'completed': ''">
+                        <span>{{task.text}}</span>
+                        <div>
+                            <i class="fa-solid fa-check"  @click="completeTask(index)" ></i>
+                            <i class="fa-solid fa-xmark" @click="delateTask(index)"></i>
+                        </div>
                     </li>
                 </ul>
             </main>

@@ -21,6 +21,7 @@ createApp({
             newTask: '',
             error: false,
 
+
         }
     },
     methods: {
@@ -35,6 +36,14 @@ createApp({
         },
         delateTask(index) {
             this.tasks.splice(index, 1)
+        },
+        completeTask(index) {
+            if (this.tasks[index].done === true) {
+                this.tasks[index].done = false;
+            } else {
+                this.tasks[index].done = true
+            }
+
         }
     }
 }).mount('#app');
