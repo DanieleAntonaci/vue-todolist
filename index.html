@@ -29,7 +29,7 @@
                 </div>
 
                 <!-- list of element -->
-                <ul id="list-element">
+                <ul id="list-element" v-if="tasks.length > 0">
                     <li v-for="(task, index) in tasks" :class="task.done ? 'completed': ''">
                         <span>{{task.text}}</span>
                         <div>
@@ -38,6 +38,8 @@
                         </div>
                     </li>
                 </ul>
+                <!-- if there are no task -->
+                <h2 v-else>Non ci sono tasks</h2>
             </main>
     
         </div>
